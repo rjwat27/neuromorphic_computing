@@ -28,10 +28,15 @@ Here are some functionalities that would improve these tools greatly. New develo
 I will also be working on these as my schedule permits: 
 
 -Dividing the tool into three stages (pytorch model->hardware simulation->bitstream) accessible to the user
+
 -A simple command-line gui
+
 -Modifying the learning algorithm for time-series data 
+
 -toggled parameters that tie chip outputs back to input for feedback (would help with temporal learning) 
+
 -optimizations to the phase-domain neuron model
+
 -more graphing utilities 
 
 -weights have a bitstream, does the toolchain need to export anything for vco biases?
