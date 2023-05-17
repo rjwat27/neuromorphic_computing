@@ -3,8 +3,6 @@ import PhaseDomainNeuron as pdn
 
 import pdn_net as pn 
 
-import weight_bias_transform as wbt 
-
 from matplotlib import pyplot as plt
 
 import torch
