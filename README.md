@@ -5,6 +5,7 @@ At the moment this tool is a single-line operation:
     python toolchain.py <sample_file_name> <target_file_name> <bitstream_destination>
 
 =================================================
+
 This command takes labeled data in the form of input samples and corresponding targets. 
 Pass the name of the file into the respective field. Sample and target data must be files that 
 were created with torch.save(). Each should contain a single pytorch tensor. 
