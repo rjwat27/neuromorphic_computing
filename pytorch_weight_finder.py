@@ -172,14 +172,14 @@ def learn(inputs, targets, num_epochs=int(10e3), clipping='during', quantized=Fa
         # Print the loss every 1000 epochs
         if epoch % 1000 == 0:
             print(f"Epoch {epoch}, Loss: {loss.item()}")
-            if clipping=='during':
-                for name, param in model.named_parameters():
-                    if "weight" in name:
-                        param.data = torch.clamp(param.data, -1, 1)
-                        if quantized:
-                            param.data = (torch.round(param.data*15) / 16)
-                    if "bias" in name:
-                        param.data = torch.clamp(param.data, min=.13, max=.9)
+            # if clipping=='during':
+            #     for name, param in model.named_parameters():
+            #         if "weight" in name:
+            #             param.data = torch.clamp(param.data, -1, 1)
+            #             if quantized:
+            #                 param.data = (torch.round(param.data*15) / 16)
+            #         if "bias" in name:
+            #             param.data = torch.clamp(param.data, min=.13, max=.9)
 
 
     if clipping=='after':
